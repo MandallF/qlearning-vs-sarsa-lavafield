@@ -1,0 +1,35 @@
+============================================================
+LAV TARLASI — Pekiştirmeli Öğrenme Deneyi
+============================================================
+Ortam: 6 x 10 ızgara, 60 durum, 4 eylem
+Başlangıç: (5, 0)   Hedef: (5, 9)
+Parametreler: alpha=0.50, gamma=0.95, epsilon=0.10, epizod=500, seed=25
+
+Ortam haritası:
+. . . . . . . . . .
+. . T . . . . T . .
+. . . . . . . . . .
+. . . . T . . . . .
+. . . . . . . . . .
+A L L L L L L L L H
+
+Eğitim çalışıyor (3 yöntem × 25 seed × 500 epizod)...
+
+------------------------------------------------------------
+SONUÇLAR
+------------------------------------------------------------
+BFS (model-tabanlı) en kısa güvenli yol: 11 adım
+Rastgele politika ortalama ödül: -3733.7
+
+Yöntem           |  Açgözlü |   Adım | Son 50 ep. çevrimiçi
+-----------------+----------+--------+-------------------
+Q-Learning       |       90 |     11 |               64.0
+SARSA            |       86 |     15 |               74.2
+Expected SARSA   |       86 |     15 |               79.6
+
+Yorum: SARSA çevrimiçi (eğitim) ödülde genelde daha yüksektir (lav
+kenarından kaçınıp daha az düşer); Q-Learning ise açgözlü politikada
+en kısa (riskli) yolu bulur. Bu, on-policy/off-policy farkının somut
+bir gösterimidir.
+
+Grafikler 'D:\Claude\PO_Proje\figurler' klasörüne kaydedildi.

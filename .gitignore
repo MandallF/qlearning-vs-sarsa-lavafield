@@ -1,0 +1,15 @@
+# Doküman üretim araçları (node_modules dahil)
+_build/
+node_modules/
+
+# Paketleme çıktıları
+KubilayInanc_RL_Proje/
+*.rar
+
+# Kişisel bilgi içeren teslim belgeleri (public repoda tutulmuyor)
+*.docx
+*.pptx
+
+# Python derleme önbelleği
+__pycache__/
+*.pyc
