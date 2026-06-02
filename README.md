@@ -42,6 +42,14 @@ Q-Learning açgözlü politikada **optimal kısa yolu** (lavın kenarı), SARSA 
 
 ![Öğrenme eğrileri](figurler/02_ogrenme_egrileri.png)
 
+## Eğitim Aşaması
+
+Ajan eğitimsizken hedefe ulaşamaz (ödül −200); kısa sürede öğrenip kararlı hâle gelir — **Q-Learning ~20. epizod**, **SARSA ~26. epizod**. Aşağıda Q-Learning'in öğrendiği rotanın eğitim boyunca gelişimi ve açgözlü performansın yakınsaması görülmektedir.
+
+![Eğitim aşamaları](figurler/06_egitim_asamalari.png)
+
+![Yakınsama eğrisi](figurler/07_yakinsama.png)
+
 ## Çalıştırma
 
 ```bash
@@ -62,6 +70,7 @@ Program eğitimi yapar, sayısal özeti ekrana yazar (`sonuclar.txt`) ve tüm gr
 | `kod/experiments.py` | Eğitim döngüsü ve deneyler |
 | `kod/visualize.py` | Grafik üretimi |
 | `kod/main.py` | Ana çalıştırma dosyası |
+| `kod/egitim_asamasi.py` | Eğitim aşaması ve yakınsama analizi |
 | `figurler/` | Üretilen grafikler |
 | `sonuclar.txt` | Örnek çalıştırma çıktısı |
 
