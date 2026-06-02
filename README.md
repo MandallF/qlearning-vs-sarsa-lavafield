@@ -1,5 +1,7 @@
 # Lav Tarlasında Güvenli Rota Öğrenimi: Q-Learning vs SARSA
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MandallF/qlearning-vs-sarsa-lavafield/blob/main/sunum/Lav_Tarlasi_Calistir.ipynb)
+
 Bursa Teknik Üniversitesi **Pekiştirmeli Öğrenmeye Giriş** dersi dönem projesi.
 
 Bu projede, lav şeridiyle bölünmüş özel bir **ızgara dünyası (GridWorld)** ortamı tasarladım ve bir ajanı **Q-Learning** ve **SARSA** tablolu pekiştirmeli öğrenme yöntemleriyle eğittim. Ortam, **riskli ama kısa** (lavın kenarından) ile **güvenli ama uzun** yol arasındaki tercihi açığa çıkaracak şekilde tasarlandı; böylece **on-policy (SARSA)** ile **off-policy (Q-Learning)** öğrenme arasındaki fark somut olarak gözlemlenebiliyor.

@@ -9,6 +9,9 @@ KubilayInanc_RL_Proje/
 # Kişisel bilgi içeren teslim belgeleri (public repoda tutulmuyor)
 *.docx
 *.pptx
+# İstisna: sunum/ klasöründeki (öğrenci numarası maskelenmiş) kopyalar dahil edilir
+!sunum/*.docx
+!sunum/*.pptx
 
 # Python derleme önbelleği
 __pycache__/
