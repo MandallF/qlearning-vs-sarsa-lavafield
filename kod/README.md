@@ -1,8 +1,9 @@
 # Lav Tarlası — Pekiştirmeli Öğrenme Projesi
 
 **Ders:** Pekiştirmeli Öğrenmeye Giriş — Bursa Teknik Üniversitesi
-**Öğrenci:** Kubilay İnanç (22360859047) — Bilgisayar Mühendisliği
+**Öğrenci:** Kubilay İnanç (*********47) — Bilgisayar Mühendisliği
 **Öğretim Üyesi:** Dr. İlhan Tunç
+**Proje deposu:** https://github.com/MandallF/qlearning-vs-sarsa-lavafield
 
 ## Özet
 
