@@ -25,7 +25,6 @@ CELL_LABELS = {START: "B", GOAL: "H", TRAP: "T"}
 METHOD_COLORS = {
     "q_learning": "#1f77b4",      # mavi
     "sarsa": "#ff7f0e",           # turuncu
-    "expected_sarsa": "#2ca02c",  # yeşil
 }
 
 

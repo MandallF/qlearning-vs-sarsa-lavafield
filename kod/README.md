@@ -7,7 +7,7 @@
 ## Özet
 
 Bu projede, lav şeridiyle bölünmüş özel bir **ızgara dünyası (GridWorld)**
-ortamı tasarladım ve ajanı **Q-Learning**, **SARSA** ve **Expected SARSA**
+ortamı tasarladım ve ajanı **Q-Learning** ve **SARSA**
 tablolu pekiştirmeli öğrenme yöntemleriyle eğittim. Ortam bir Markov Karar
 Süreci (MKS) olarak modellenmiştir. Amaç, ajanın başlangıçtan ödül bölgesine
 (hedef) güvenli bir rota öğrenmesidir.
@@ -40,7 +40,7 @@ dosyasına da kaydeder) ve tüm grafikleri `../figurler/` klasörüne PNG olarak
 | Dosya             | Açıklama                                                        |
 |-------------------|-----------------------------------------------------------------|
 | `environment.py`  | `LavaGridWorld` — ortam (MDP: durum, eylem, ödül, geçiş)         |
-| `agents.py`       | `TDAgent` — Q-Learning / SARSA / Expected SARSA + epsilon-greedy |
+| `agents.py`       | `TDAgent` — Q-Learning / SARSA + epsilon-greedy |
 | `baselines.py`    | Rastgele politika ve BFS en kısa güvenli yol                    |
 | `experiments.py`  | Eğitim döngüsü, çok-tohumlu deney, açgözlü değerlendirme         |
 | `visualize.py`    | Tüm grafiklerin üretimi (matplotlib)                            |

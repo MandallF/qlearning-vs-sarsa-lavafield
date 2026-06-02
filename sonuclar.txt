@@ -13,7 +13,7 @@ Ortam haritası:
 . . . . . . . . . .
 A L L L L L L L L H
 
-Eğitim çalışıyor (3 yöntem × 25 seed × 500 epizod)...
+Eğitim çalışıyor (2 yöntem × 25 seed × 500 epizod)...
 
 ------------------------------------------------------------
 SONUÇLAR
@@ -25,7 +25,6 @@ Yöntem           |  Açgözlü |   Adım | Son 50 ep. çevrimiçi
 -----------------+----------+--------+-------------------
 Q-Learning       |       90 |     11 |               64.0
 SARSA            |       86 |     15 |               74.2
-Expected SARSA   |       86 |     15 |               79.6
 
 Yorum: SARSA çevrimiçi (eğitim) ödülde genelde daha yüksektir (lav
 kenarından kaçınıp daha az düşer); Q-Learning ise açgözlü politikada

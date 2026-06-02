@@ -21,7 +21,7 @@ def run_episode(env, agent):
     while True:
         s_next, reward, terminated, truncated = env.step(a)
         # Sonraki eylem politikadan seçilir (SARSA bunu kullanır;
-        # Q-Learning ve Expected SARSA için yalnızca bir sonraki adımdır)
+        # Q-Learning için yalnızca bir sonraki adımdır)
         a_next = agent.select_action(s_next)
         agent.update(s, a, reward, s_next, a_next, terminated)
         s, a = s_next, a_next

@@ -2,7 +2,7 @@
 
 Bursa Teknik Üniversitesi **Pekiştirmeli Öğrenmeye Giriş** dersi dönem projesi.
 
-Bu projede, lav şeridiyle bölünmüş özel bir **ızgara dünyası (GridWorld)** ortamı tasarladım ve bir ajanı **Q-Learning**, **SARSA** ve **Expected SARSA** tablolu pekiştirmeli öğrenme yöntemleriyle eğittim. Ortam, **riskli ama kısa** (lavın kenarından) ile **güvenli ama uzun** yol arasındaki tercihi açığa çıkaracak şekilde tasarlandı; böylece **on-policy (SARSA)** ile **off-policy (Q-Learning)** öğrenme arasındaki fark somut olarak gözlemlenebiliyor.
+Bu projede, lav şeridiyle bölünmüş özel bir **ızgara dünyası (GridWorld)** ortamı tasarladım ve bir ajanı **Q-Learning** ve **SARSA** tablolu pekiştirmeli öğrenme yöntemleriyle eğittim. Ortam, **riskli ama kısa** (lavın kenarından) ile **güvenli ama uzun** yol arasındaki tercihi açığa çıkaracak şekilde tasarlandı; böylece **on-policy (SARSA)** ile **off-policy (Q-Learning)** öğrenme arasındaki fark somut olarak gözlemlenebiliyor.
 
 ## Ortam
 
@@ -21,7 +21,6 @@ Ortam bir Markov Karar Süreci (MKS) olarak modellendi: **(S, A, P, R, γ)**
 |---|---|---|
 | **Q-Learning** | off-policy | r + γ · max Q(s′, a′) |
 | **SARSA** | on-policy | r + γ · Q(s′, a′) |
-| **Expected SARSA** | on-policy | r + γ · E[Q(s′, a′)] |
 
 Karşılaştırma için ayrıca **rastgele politika** (alt referans) ve **BFS** ile bulunan en kısa güvenli yol (model-tabanlı üst referans) kullanıldı.
 
@@ -35,10 +34,9 @@ Q-Learning açgözlü politikada **optimal kısa yolu** (lavın kenarı), SARSA 
 |---|---:|---:|---:|
 | Q-Learning | 90 | 11 | 64.0 |
 | SARSA | 86 | 15 | 74.2 |
-| Expected SARSA | 86 | 15 | 79.6 |
 | Rastgele politika | ≈ −3734 | — | — |
 
-Çevrimiçi (eğitim) ödülde SARSA ve Expected SARSA, Q-Learning'i geçiyor (lav kenarından kaçınıp daha az ceza aldıkları için); Q-Learning ise açgözlü değerlendirmede en kısa yolu buluyor. Bu, on-policy/off-policy farkının somut bir gösterimidir.
+Çevrimiçi (eğitim) ödülde SARSA, Q-Learning'i geçiyor (lav kenarından kaçınıp daha az ceza aldığı için); Q-Learning ise açgözlü değerlendirmede en kısa yolu buluyor. Bu, on-policy/off-policy farkının somut bir gösterimidir.
 
 ![Öğrenme eğrileri](figurler/02_ogrenme_egrileri.png)
 
@@ -73,7 +71,7 @@ Ek analizler için: `python egitim_asamasi.py` (eğitim aşaması ve yakınsama)
 | Klasör / Dosya | Açıklama |
 |---|---|
 | `kod/environment.py` | `LavaGridWorld` — ortam (MDP) |
-| `kod/agents.py` | `TDAgent` — Q-Learning / SARSA / Expected SARSA |
+| `kod/agents.py` | `TDAgent` — Q-Learning / SARSA |
 | `kod/baselines.py` | Rastgele politika ve BFS en kısa yol |
 | `kod/experiments.py` | Eğitim döngüsü ve deneyler |
 | `kod/visualize.py` | Grafik üretimi |

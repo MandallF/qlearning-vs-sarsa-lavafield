@@ -2,7 +2,7 @@
 Ana Çalıştırma Dosyası
 ======================
 
-Lav Tarlası ortamında Q-Learning, SARSA ve Expected SARSA yöntemlerini eğitir;
+Lav Tarlası ortamında Q-Learning ve SARSA yöntemlerini eğitir;
 rastgele politika ve BFS (model-tabanlı en kısa yol) ile karşılaştırır; tüm
 grafikleri üretir ve sayısal özet yazdırır/kaydeder.
 
@@ -29,11 +29,10 @@ import visualize
 HERE = os.path.dirname(os.path.abspath(__file__))
 FIG_DIR = os.path.join(HERE, "..", "figurler")
 
-METHODS = ["q_learning", "sarsa", "expected_sarsa"]
+METHODS = ["q_learning", "sarsa"]
 METHOD_LABELS = {
     "q_learning": "Q-Learning",
     "sarsa": "SARSA",
-    "expected_sarsa": "Expected SARSA",
 }
 
 # Hiperparametreler (ders notlarındaki değerlere yakın)
