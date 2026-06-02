@@ -50,6 +50,12 @@ Ajan eğitimsizken hedefe ulaşamaz (ödül −200); kısa sürede öğrenip kar
 
 ![Yakınsama eğrisi](figurler/07_yakinsama.png)
 
+## Keşif Oranının (ε) Etkisi
+
+ε büyüdükçe ajan daha sık rastgele hareket eder ve lavaya daha çok düşer → **çevrimiçi ödül düşer, epizod başına adım sayısı artar**; ancak öğrenilen açgözlü politika optimal kalır. Ayrıca SARSA, yüksek ε'de Q-Learning'den daha az bozulur (daha güvenli).
+
+![Epsilon duyarlılığı](figurler/08_epsilon.png)
+
 ## Çalıştırma
 
 ```bash
@@ -59,6 +65,8 @@ python main.py        # Windows'ta: py main.py
 ```
 
 Program eğitimi yapar, sayısal özeti ekrana yazar (`sonuclar.txt`) ve tüm grafikleri `figurler/` klasörüne üretir.
+
+Ek analizler için: `python egitim_asamasi.py` (eğitim aşaması ve yakınsama) ve `python epsilon_analizi.py` (ε duyarlılığı).
 
 ## Proje Yapısı
 
@@ -71,6 +79,7 @@ Program eğitimi yapar, sayısal özeti ekrana yazar (`sonuclar.txt`) ve tüm gr
 | `kod/visualize.py` | Grafik üretimi |
 | `kod/main.py` | Ana çalıştırma dosyası |
 | `kod/egitim_asamasi.py` | Eğitim aşaması ve yakınsama analizi |
+| `kod/epsilon_analizi.py` | Keşif oranı (ε) duyarlılık analizi |
 | `figurler/` | Üretilen grafikler |
 | `sonuclar.txt` | Örnek çalıştırma çıktısı |
 
